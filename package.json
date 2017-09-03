@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mattgreenberg/DFW2_SearchApp/issues"
   },
-  "homepage": "https://github.com/mattgreenberg/DFW2_SearchApp#readme"
+  "homepage": "https://github.com/mattgreenberg/DFW2_SearchApp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
