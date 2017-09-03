@@ -1,0 +1,20 @@
+{
+  "name": "searchmarvelapi",
+  "version": "1.0.0",
+  "description": "website that uses the marvel api for a school project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattgreenberg/DFW2_SearchApp.git"
+  },
+  "author": "Matthew Greenberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattgreenberg/DFW2_SearchApp/issues"
+  },
+  "homepage": "https://github.com/mattgreenberg/DFW2_SearchApp#readme"
+}
