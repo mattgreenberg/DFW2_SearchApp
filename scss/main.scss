@@ -1,7 +1,7 @@
 // Utilities
 @import 'utils/vars';
 @import 'utils/mixins';
-@import 'utils/placeholder';
+@import 'utils/placeholders';
 
 // Base styles
 @import 'base/base';
@@ -10,4 +10,4 @@
 @import 'layout/navigation';
 
 // Component Styles
-@import 'components/buttons';
+@import 'component/buttons';
