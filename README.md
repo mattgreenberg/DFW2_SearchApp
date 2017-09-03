@@ -1,11 +1,5 @@
-# Search Marvel
+# Search MovieDB APP - MovieDock
 
 ## Objective
-To use the [Marvel API](http://developer.marvel.com/) as a platform to build a search application.
-
-## Technologies
-> Node.js
-> Gulp.js
-> HTML / CSS
-> SCSS
+To use the [The MovieDB API](https://developers.themoviedb.org/3/getting-started) as a platform to build a search application.
 
