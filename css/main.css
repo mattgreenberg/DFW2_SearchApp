@@ -155,4 +155,16 @@ a.btn-to-mdb {
   border-radius: 10px;
   width: 288px;
   display: block;
-  margin: 20px auto 0 auto; }
+  margin: 20px auto; }
+
+footer {
+  background: #333; }
+
+footer p {
+  display: block;
+  font-family: "ff-dagny-web-pro", sans-serif;
+  color: #A8A096;
+  text-align: center;
+  font-size: 3.6em;
+  padding: 20px 0;
+  border-top: 3px solid #A8A096; }
