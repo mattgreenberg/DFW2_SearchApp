@@ -6,3 +6,6 @@ To use the [The MovieDB API](https://developers.themoviedb.org/3/getting-started
 ## Resources
 Photos from https://unsplash.com/@jakobowens1
 Jake Owens
+
+## GITHUB PAGES
+[View This Project Live](https://mattgreenberg.github.io/DFW2_SearchApp/)
