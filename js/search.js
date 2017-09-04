@@ -29,6 +29,9 @@ window.addEventListener('load', function(e){
 		errorMsg.style.display = "none";
 	});
 
+	// load initial
+	request("https://api.themoviedb.org/3/search/movie?api_key=9e27466f28a16d90e4906782aa96b80c&language=en-US&query=the+kids&page=1&include_adult=false");
+
 	searchForm.addEventListener('submit', function(e){
 
 		e.preventDefault();
@@ -40,6 +43,13 @@ window.addEventListener('load', function(e){
 		url += "query=" + searchTerm + "&"
 		url += "page=1&";
 		url += "include_adult=false";
+		console.dir(url);
+		request(url);
+
+	});
+
+	function request(url){
+
 		window.ajax(url, function(results){
 			if(!results){
 				errorMsg.innerHTML = "Error : Please Try Again";
@@ -51,7 +61,7 @@ window.addEventListener('load', function(e){
 			};
 		});
 
-	});
+	};
 
 
 	function loadAssets(data){
