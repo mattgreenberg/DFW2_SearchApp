@@ -9,5 +9,40 @@ h2{
 figure{
 	float: left;
 	display: inline-block;
-	width: 24%;
+	width: 49%;
+	margin-right: 1%;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+}
+figure:nth-child(2n+1){
+	margin-right: 0;
+}
+figure img{
+	width: 100px;
+	vertical-align: top;
+}
+figure figcaption{
+	margin: 5px 0 0 0;
+	display: inline-block;
+	font-family: $font;
+	width: calc(100% - 105px);
+}
+figure figcaption p{
+	padding: 0 5px;
+}
+p.mov-title{
+	font-size: $size-l;
+	font-weight: 800;
+	text-align: center;
+}
+p.mov-overview{
+	font-size: $size-d;
+}
+p.mov-release{
+	text-align: right;
+	padding-top: 5px;
+	font-size: $size-s;
+}
+p.mov-release::before{
+	content: "released : ";
 }
