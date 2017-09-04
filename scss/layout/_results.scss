@@ -46,3 +46,16 @@ p.mov-release{
 p.mov-release::before{
 	content: "released : ";
 }
+a.btn-to-mdb{
+	color: #00D474;
+	background: #081C24;
+	text-decoration: none;
+	font-family: $font;
+	font-size: $size-l;
+	padding: 10px 5px;
+	border: 4px solid #00d474;
+	@include border-radius(10px);
+	width: 288px;
+	display: block;
+	margin: 20px auto 0 auto;
+}
