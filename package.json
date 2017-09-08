@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/mattgreenberg/DFW2_SearchApp#readme",
   "devDependencies": {
+    "autoprefixer": "^7.1.4",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
     "gulp-sass": "^3.1.0"
   }
 }

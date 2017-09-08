@@ -5,7 +5,8 @@
 #logo, div.searchbar form {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); }
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 body, html {
   font-size: 62.5%;
@@ -16,7 +17,8 @@ body, html {
   display: block; }
 
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 input:focus {
   outline: #f9f9f9; }
@@ -28,6 +30,7 @@ input:focus {
 
 header {
   height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/banner-bkg.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/banner-bkg.jpg");
   background-size: cover;
   background-position: center; }
@@ -152,9 +155,6 @@ a.btn-to-mdb {
   font-size: 3.6em;
   padding: 10px 5px;
   border: 4px solid #00d474;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
   border-radius: 10px;
   width: 288px;
   display: block;
