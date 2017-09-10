@@ -2,7 +2,6 @@
 HEADER STYLES
 */
 header{
-	font-size: 2.6em;
 	background-image: url('../img/banner-bkg.jpg');
 	background-position: center;
 	background-size: cover;	
@@ -12,7 +11,7 @@ div.floatbar{
 	position: relative;
 }
 #logo{
-	font-size: 2em;
+	font-size: 4.7em;
 	font-weight: 800;
 	text-transform: uppercase;
 	padding: .3em 0;
@@ -43,7 +42,7 @@ nav ul li{
 	display: block;
 }
 nav ul li a{
-	font-size: 1.4em;
+	font-size: 3.5em;
 	text-decoration: none;
 	padding: 15px 20px;
 	display: block;
@@ -51,18 +50,15 @@ nav ul li a{
 	text-transform: uppercase;
 	color: $black;
 }
-
-#searchform{
-	margin-top: -10px;
-}
 #searchform label{
 	display: inline-block;
+	font-size:2.4em;
 	background: $grey;
 	padding: 5px 3px;
 	font-style: italic;
 }
 #search{
-	font-size: 1.4em;
+	font-size: 2.8em;
 	width: 100%;
 	padding: 8px 10px 8px 40px;
 	background: $yellow;
@@ -93,7 +89,7 @@ input[type=submit]:focus{
 }
 p.error{
 	background: $grey;
-	font-size: 1.1em;
+	font-size: 2.3em;
 	color: $red;
 	font-weight: bold;
 	padding: 5px 10px;
@@ -103,7 +99,7 @@ input[type=submit]{
 	border: 4px solid $steel;
 	background: $darkgreen;
 	text-transform: lowercase;
-	font-size: 0.8em;
+	font-size: 2.3em;
 	color: $yellow;
 	float: right;
 }

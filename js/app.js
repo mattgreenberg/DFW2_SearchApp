@@ -58,7 +58,6 @@ window.addEventListener('load', function(e){
 		url += "query=" + searchTerm + "&"
 		url += "page=1&";
 		url += "include_adult=false";
-		console.dir(url);
 		request(url);
 
 	});
@@ -87,7 +86,6 @@ window.addEventListener('load', function(e){
 			inputField.select();
 		} else {
 
-			console.dir(data);
 			var len = (data.results.length > 6)? 6 : data.results.length;
 			content.innerHTML = "";
 			var eleResults = document.createElement('h2');
