@@ -4,3 +4,40 @@ div.content h2{
 	font-weight: 800;
 	text-transform: uppercase;
 }
+div.content figure{
+	background: $red;
+	clear: both;
+	padding: 8px;
+	margin: 10px 0;
+}
+div.content figure img{
+	width: 75px;
+	vertical-align: top;
+}
+div.content figure figcaption{
+	width: calc(100% - 75px);
+	display: inline-block;
+	color: $grey;
+}
+div.content figure figcaption h3{
+	font-size: 3em;
+	text-align: center;
+	padding: 10px;
+	font-weight: 800;
+}
+div.content figure figcaption p.mov-overview{
+	padding: 10px;
+	font-size:2.5em;
+	line-height: 1.25em;
+}
+div.content figure figcaption p.mov-release{
+	padding:0 10px;
+	display: block;
+	text-align: right;
+	font-size: 2.3em;
+}
+div.content figure figcaption p.mov-release:before{
+	content: 'released : ';
+	color: $steel;
+	font-weight: 800;
+}

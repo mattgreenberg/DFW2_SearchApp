@@ -6,6 +6,12 @@ query=click&
 page=1&
 include_adult=false
 */
+
+/*         SOME IMAGE URLS
+https://image.tmdb.org/t/p/w1400_and_h450_bestv2/filename.jpg    - backdrop_path
+https://image.tmdb.org/t/p/w185_and_h278_bestv2/filename.jpg     - poster_path
+*/
+
 /*         FIGURE STRUCTURE
 <figure>
 	<img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/ojmEqzJgTLo8S34uVQ6ZWmhgOoG.jpg">
@@ -80,6 +86,7 @@ window.addEventListener('load', function(e){
 
 	function loadAssets(data){
 
+		console.dir(data);
 		if(data.total_results === 0){
 			errorMsg.innerHTML = "Error : No Results Found";
 			errorMsg.style.display = "block";
