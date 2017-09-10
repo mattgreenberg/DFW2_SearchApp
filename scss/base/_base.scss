@@ -1,0 +1,18 @@
+body, html{
+	font-size: 62.5%;
+	background-color: $default;
+	font-family: $font-family;
+	min-width: 320px;
+}
+*{
+	box-sizing: border-box;
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.wrapper{
+	width: 100%;
+	padding: 1em;
+}

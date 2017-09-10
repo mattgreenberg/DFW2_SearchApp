@@ -1,0 +1,11 @@
+// media query mixin
+// based on Jonathan Suh's SASS Maps
+// https://jonsuh.com/blog/managing-responsive-breakpoints-with-sass-maps/
+@mixin mq($mq-breakpoint) {
+	@if map-has-key($breakpoints, $mq-breakpoint) {
+		$mq-breakpoint: map-get($breakpoints, $mq-breakpoint);
+	}
+	@media (max-width: #{$mq-breakpoint}){
+		@content;
+	}
+}

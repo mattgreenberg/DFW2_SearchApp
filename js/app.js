@@ -24,6 +24,21 @@ window.addEventListener('load', function(e){
 	var errorMsg = document.querySelector('label.error');
 	var inputField = document.getElementById('search');
 	var content = document.querySelector('div.content');
+	var menu = document.getElementById('hamburger');
+	var navul = document.querySelector('nav ul');
+
+	// Toggle menu button animation
+	menu.addEventListener('click', function(e){
+
+		if(this.classList.contains('open')){
+			this.classList.remove('open');
+			navul.classList.remove('open');
+		} else {
+			this.classList.add('open');
+			navul.classList.add('open');
+		}
+
+	});
 
 	inputField.addEventListener('keydown', function(e){
 		errorMsg.style.display = "none";
@@ -91,7 +106,7 @@ window.addEventListener('load', function(e){
 				img.setAttribute('src',"https://image.tmdb.org/t/p/w185_and_h278_bestv2"+data.results[i].poster_path);
 				figure.appendChild(img);
 				var figcap = document.createElement('figcaption');
-				var pTitle = document.createElement('p');
+				var pTitle = document.createElement('h3');
 				pTitle.classList.add('mov-title');
 				pTitle.innerHTML = data.results[i].title;
 				figcap.appendChild(pTitle);
