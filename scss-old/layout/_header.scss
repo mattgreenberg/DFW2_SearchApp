@@ -1,0 +1,78 @@
+header{
+	height: 300px;
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/banner-bkg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+div.floatbar{
+	background: rgba(0,0,0,0.5);
+	position: relative;
+}
+#logo{
+	@extend %hor-align-ele;
+	font-size: $size-xl;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-family: $font;
+	color: $yellow;
+	span {
+		font-weight: 400;
+		color: $green;
+	}
+}
+nav ul{
+	float: right;
+}
+nav ul li{
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+nav ul li a{
+	padding: 20px 10px;
+	display: inline-block;
+	color: $silver;
+	text-decoration: none;
+	font-size: $size-l;
+	text-transform: uppercase;
+	font-family: $font;
+	font-weight: 800;
+	&:hover{
+		color: $white;
+		text-decoration: underline;
+	}
+}
+nav ul li a.page{
+	color: $white;
+	text-decoration: underline;
+}
+div.searchbar{
+	height: 225px;
+	position: relative;
+}
+div.searchbar form{
+	@extend %hor-align-ele;
+	font-family: $font;
+	width: 100%;
+	padding: 0 150px;
+	label{
+		font-size: $size-d;
+		display: inline-block;
+		background: #000;
+		color: $white;
+		padding: 10px 5px;
+	}
+	label.error{
+		display: none;
+		background: $white;
+		color: $red;
+	}
+	input{
+		display: block;
+		width: 100%;
+		font-size: $size-l;
+		padding: 10px 20px;
+		background: $silver;
+		border: 3px solid $white;
+	}
+}
