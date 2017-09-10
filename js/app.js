@@ -21,7 +21,7 @@ include_adult=false
 window.addEventListener('load', function(e){
 
 	var searchForm = document.getElementById('searchform');
-	var errorMsg = document.querySelector('label.error');
+	var errorMsg = document.querySelector('p.error');
 	var inputField = document.getElementById('search');
 	var content = document.querySelector('div.content');
 	var menu = document.getElementById('hamburger');

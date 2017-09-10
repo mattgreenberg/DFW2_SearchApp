@@ -167,6 +167,9 @@ nav ul li a {
   text-transform: uppercase;
   color: #000; }
 
+#searchform {
+  margin-top: -10px; }
+
 #searchform label {
   display: inline-block;
   background: #D3D0CB;
@@ -182,7 +185,9 @@ nav ul li a {
   position: relative; }
 
 div.icon {
-  position: relative; }
+  position: relative;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000; }
 
 div.icon:before {
   background-image: url("../img/search.png");
@@ -198,5 +203,22 @@ div.icon:before {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
 
-#search:focus {
+#search:focus,
+input[type=submit]:focus {
   outline: none; }
+
+p.error {
+  background: #D3D0CB;
+  font-size: 1.1em;
+  color: #63171C;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: none; }
+
+input[type=submit] {
+  border: 4px solid #587B7F;
+  background: #1E2019;
+  text-transform: lowercase;
+  font-size: 0.8em;
+  color: #E2C044;
+  float: right; }
