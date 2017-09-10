@@ -34,7 +34,7 @@ div.content figure img{
 	@include mq(small){
 		width: 125px;
 	}
-	@include mq(medium){
+	@include mq(large){
 		width: 185px;
 	}
 }
@@ -45,7 +45,7 @@ div.content figure figcaption{
 	@include mq(small){
 		width: calc(100% - 125px);
 	}
-	@include mq(medium){
+	@include mq(large){
 		width: calc(100% - 185px);
 	}
 }
