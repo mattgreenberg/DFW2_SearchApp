@@ -3,21 +3,35 @@ div.content h2{
 	padding: 10px 0;
 	font-weight: 800;
 	text-transform: uppercase;
+	@include mq(small){
+		font-size: 4em;
+		padding: 10px 30px;
+	}
 }
 div.content figure{
 	background: $red;
 	clear: both;
 	padding: 8px;
 	margin: 10px 0;
+	@include mq(small){
+		font-size: 1.25em;
+		margin: 10px 30px;
+	}
 }
 div.content figure img{
 	width: 75px;
 	vertical-align: top;
+	@include mq(small){
+		width: 125px;
+	}
 }
 div.content figure figcaption{
 	width: calc(100% - 75px);
 	display: inline-block;
 	color: $grey;
+	@include mq(small){
+		width: calc(100% - 125px);
+	}
 }
 div.content figure figcaption h3{
 	font-size: 3em;

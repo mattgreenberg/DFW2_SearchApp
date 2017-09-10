@@ -135,6 +135,10 @@ div.floatbar {
   padding: .3em 0;
   color: #E2C044;
   margin-bottom: 10px; }
+  @media (min-width: 600px) {
+    #logo {
+      float: left;
+      padding: .3em 30px; } }
 
 #logo span {
   color: #D3D0CB;
@@ -149,9 +153,19 @@ nav ul {
   position: absolute;
   z-index: 100;
   display: none; }
+  @media (min-width: 600px) {
+    nav ul {
+      display: inline-block !important;
+      background: transparent;
+      width: 345px;
+      top: -3px;
+      right: 30px; } }
 
 nav ul li {
   display: block; }
+  @media (min-width: 600px) {
+    nav ul li {
+      display: inline-block; } }
 
 nav ul li a {
   font-size: 3.5em;
@@ -161,6 +175,12 @@ nav ul li a {
   font-weight: 800;
   text-transform: uppercase;
   color: #000; }
+  @media (min-width: 600px) {
+    nav ul li a {
+      color: #E2C044; } }
+
+nav ul li:nth-child(3) a {
+  padding-right: 0; }
 
 #searchform label {
   display: inline-block;
@@ -168,6 +188,11 @@ nav ul li a {
   background: #D3D0CB;
   padding: 5px 3px;
   font-style: italic; }
+
+@media (min-width: 600px) {
+  #searchform {
+    padding: 0 20%;
+    font-size: 1.2em; } }
 
 #search {
   font-size: 2.8em;
@@ -221,21 +246,35 @@ div.content h2 {
   padding: 10px 0;
   font-weight: 800;
   text-transform: uppercase; }
+  @media (min-width: 600px) {
+    div.content h2 {
+      font-size: 4em;
+      padding: 10px 30px; } }
 
 div.content figure {
   background: #63171C;
   clear: both;
   padding: 8px;
   margin: 10px 0; }
+  @media (min-width: 600px) {
+    div.content figure {
+      font-size: 1.25em;
+      margin: 10px 30px; } }
 
 div.content figure img {
   width: 75px;
   vertical-align: top; }
+  @media (min-width: 600px) {
+    div.content figure img {
+      width: 125px; } }
 
 div.content figure figcaption {
   width: calc(100% - 75px);
   display: inline-block;
   color: #D3D0CB; }
+  @media (min-width: 600px) {
+    div.content figure figcaption {
+      width: calc(100% - 125px); } }
 
 div.content figure figcaption h3 {
   font-size: 3em;
@@ -275,6 +314,9 @@ footer {
   background: #D3D0CB;
   padding: 20px 1.3em;
   text-align: center; }
+  @media (min-width: 600px) {
+    footer {
+      font-size: 1.2em; } }
 
 footer p {
   font-size: 2.2em;

@@ -2,6 +2,9 @@ footer{
 	background: $grey;
 	padding: 20px 1.3em;
 	text-align: center;
+	@include mq(small){
+		font-size: 1.2em;
+	}
 }
 footer p{
 	font-size: 2.2em;
