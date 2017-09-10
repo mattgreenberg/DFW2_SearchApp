@@ -8,6 +8,9 @@
   transition: .5s ease-in-out;
   cursor: pointer;
   float: right;
+  @include mq(small){
+    display: none;
+  }
 }
 
 #hamburger span{

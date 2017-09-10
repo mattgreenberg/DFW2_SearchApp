@@ -38,10 +38,10 @@ window.addEventListener('load', function(e){
 
 		if(this.classList.contains('open')){
 			this.classList.remove('open');
-			navul.classList.remove('open');
+			navul.style.display = "none";
 		} else {
 			this.classList.add('open');
-			navul.classList.add('open');
+			navul.style.display = "block";
 		}
 
 	});

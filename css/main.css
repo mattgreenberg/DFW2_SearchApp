@@ -70,6 +70,9 @@ body, html {
   transition: .5s ease-in-out;
   cursor: pointer;
   float: right; }
+  @media (min-width: 600px) {
+    #hamburger {
+      display: none; } }
 
 #hamburger span {
   display: block;
@@ -145,14 +148,7 @@ nav ul {
   width: 100%;
   position: absolute;
   z-index: 100;
-  height: auto;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height 0.3s ease;
-  transition: max-height 0.3s ease; }
-
-nav ul.open {
-  max-height: 156px; }
+  display: none; }
 
 nav ul li {
   display: block; }

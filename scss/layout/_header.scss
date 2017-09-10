@@ -30,13 +30,7 @@ nav ul{
 	width: 100%;
 	position: absolute;
 	z-index: 100;
-	height: auto;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.3s ease;
-}
-nav ul.open{
-	max-height: 156px;
+	display: none;
 }
 nav ul li{
 	display: block;
