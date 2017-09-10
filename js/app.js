@@ -101,14 +101,15 @@ window.addEventListener('load', function(e){
 			for(var i=0; i<len; i++){
 
 				var overview = data.results[i].overview;
-				if(overview.length > 250){
-					overview = overview.substr(0,250);
-					overview += "...";
-				}
+				// if(overview.length > 250){
+				// 	overview = overview.substr(0,250);
+				// 	overview += "...";
+				// }
 
 				var figure = document.createElement('figure');
 				var img = document.createElement('img');
-				img.setAttribute('src',"https://image.tmdb.org/t/p/w185_and_h278_bestv2"+data.results[i].poster_path);
+				var poster = (data.results[i].poster_path)? "https://image.tmdb.org/t/p/w185_and_h278_bestv2"+data.results[i].poster_path : 'img/placeholder_poster.png';
+				img.setAttribute('src',poster);
 				figure.appendChild(img);
 				var figcap = document.createElement('figcaption');
 				var pTitle = document.createElement('h3');

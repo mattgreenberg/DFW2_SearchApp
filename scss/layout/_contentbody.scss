@@ -41,3 +41,15 @@ div.content figure figcaption p.mov-release:before{
 	color: $steel;
 	font-weight: 800;
 }
+a.btn-to-mdb{
+	border: 4px solid $steel;
+	background: $darkgreen;
+	text-decoration: none;
+	text-transform: lowercase;
+	display: block;
+	margin: -5px auto 10px auto;
+	font-size: 2.3em;
+	color: $yellow;
+	width: 180px;
+	padding: 10px 5px;
+}
