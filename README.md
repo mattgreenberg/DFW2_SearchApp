@@ -4,7 +4,7 @@
 To use the [The MovieDB API](https://developers.themoviedb.org/3/getting-started) as a platform to build a search application.
 
 ## Resources
-[Background photo curtosy of Jake Owens](https://unsplash.com/@jakobowens1)
+[Background photo curtosy of Felix Mooneeram](https://unsplash.com/@felixmooneeram)
 
 ## GITHUB PAGES
 [View This Project Live](https://mattgreenberg.github.io/DFW2_SearchApp/)
