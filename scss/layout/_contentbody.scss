@@ -1,4 +1,4 @@
-div.content h2{
+div.wrapper h2{
 	font-size: 3em;
 	padding: 10px 0;
 	font-weight: 800;
@@ -8,14 +8,24 @@ div.content h2{
 		padding: 10px 30px;
 	}
 }
+div.content{
+	padding-top: 0;
+	@include mq(medium){
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
 div.content figure{
 	background: $red;
 	clear: both;
 	padding: 8px;
-	margin: 10px 0;
+	margin: 0 0 10px 0;
 	@include mq(small){
 		font-size: 1.25em;
-		margin: 10px 30px;
+		margin: 0 30px 10px 30px;
+		@include mq(medium){
+			width: calc(50% - 60px);
+		}
 	}
 }
 div.content figure img{
@@ -24,6 +34,9 @@ div.content figure img{
 	@include mq(small){
 		width: 125px;
 	}
+	@include mq(medium){
+		width: 185px;
+	}
 }
 div.content figure figcaption{
 	width: calc(100% - 75px);
@@ -31,6 +44,9 @@ div.content figure figcaption{
 	color: $grey;
 	@include mq(small){
 		width: calc(100% - 125px);
+	}
+	@include mq(medium){
+		width: calc(100% - 185px);
 	}
 }
 div.content figure figcaption h3{
@@ -66,4 +82,9 @@ a.btn-to-mdb{
 	color: $yellow;
 	width: 180px;
 	padding: 10px 5px;
+	@include mq(medium){
+		font-size: 4em;
+		width: 340px;
+		text-align: center;
+	}
 }

@@ -95,9 +95,6 @@ window.addEventListener('load', function(e){
 
 			var len = (data.results.length > 6)? 6 : data.results.length;
 			content.innerHTML = "";
-			var eleResults = document.createElement('h2');
-			eleResults.innerHTML = "Results :";
-			content.appendChild(eleResults);
 			for(var i=0; i<len; i++){
 
 				var overview = data.results[i].overview;
